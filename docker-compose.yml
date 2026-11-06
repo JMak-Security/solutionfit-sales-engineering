@@ -1,0 +1,14 @@
+services:
+  solutionfit:
+    build: .
+    image: solutionfit-sales-engineering:local
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=8m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    network_mode: none
+    volumes:
+      - ./output:/app/output

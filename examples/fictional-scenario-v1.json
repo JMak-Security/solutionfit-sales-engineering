@@ -1,0 +1,73 @@
+{
+  "schema_version": "1",
+  "assumption_version": "1.0.0",
+  "product_name": "QualityPath (fictional QA automation product)",
+  "is_fictional": true,
+  "scenario_label": "Illustrative assumptions only; not customer data",
+  "currency": "USD",
+  "time_horizon_years": 3,
+  "base": {
+    "annual_releases": 12,
+    "manual_hours_per_release": "80",
+    "loaded_hourly_rate": "75.00",
+    "automation_coverage": "0.60",
+    "annual_license_cost": "12000",
+    "monthly_support_hours": "8",
+    "support_hourly_rate": "75.00",
+    "implementation_hours": "120",
+    "implementation_hourly_rate": "90.00"
+  },
+  "ranges": {
+    "annual_releases": {
+      "low": 10,
+      "base": 12,
+      "high": 14
+    },
+    "manual_hours_per_release": {
+      "low": "60",
+      "base": "80",
+      "high": "100"
+    },
+    "loaded_hourly_rate": {
+      "low": "60",
+      "base": "75.00",
+      "high": "90"
+    },
+    "automation_coverage": {
+      "low": "0.40",
+      "base": "0.60",
+      "high": "0.80"
+    },
+    "annual_license_cost": {
+      "low": "9000",
+      "base": "12000",
+      "high": "15000"
+    },
+    "monthly_support_hours": {
+      "low": "4",
+      "base": "8",
+      "high": "12"
+    },
+    "support_hourly_rate": {
+      "low": "60",
+      "base": "75.00",
+      "high": "90"
+    },
+    "implementation_hours": {
+      "low": "80",
+      "base": "120",
+      "high": "180"
+    },
+    "implementation_hourly_rate": {
+      "low": "75",
+      "base": "90.00",
+      "high": "110"
+    }
+  },
+  "notes": [
+    "All values are visible illustrative inputs and do not describe a real organization.",
+    "Automation coverage is a scenario assumption, not a measured product capability.",
+    "Annual workload and costs are held constant over the three-year horizon.",
+    "The Monte Carlo model samples each input independently because no correlation data was supplied."
+  ]
+}

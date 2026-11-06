@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible issue in the local scenario toolkit.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include real customer names, sensitive assumptions, personal information, or secrets.
+        The included product and scenario are fictional.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Use synthetic or clearly illustrative inputs only.
+    validations:
+      required: true
